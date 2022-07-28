@@ -1,0 +1,91 @@
+/* ############## left border line ############# */
+.container {
+  border-left: 4px solid black;
+  height: 500px;
+  position: fixed;
+}
+
+/* ############## content design ############# */
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #2dd35c;
+  border-left: none;
+  height: 300px;
+  margin-top: 80px;
+  position: absolute;
+  width: 800px;
+  border-top-right-radius: 20rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.content {
+  margin: 10% 9%;
+}
+.text {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-2 {
+  color: #5553b7;
+  font-weight: 700;
+}
+
+/* ############## buttons ############# */
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn-1 {
+  border-radius: 2rem;
+  color: white;
+  height: 36px;
+  background-color: #2dd35c;
+  border: none;
+  padding-left: 18px;
+  padding-right: 18px;
+  cursor: pointer;
+}
+
+.btn-2 {
+  border-radius: 2rem;
+  color: #5553b7;
+  height: 36px;
+  background-color: white;
+  border: 1px solid #5553b7;
+  padding-left: 18px;
+  padding-right: 18px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.btn-1:hover {
+  background-color: #44ba66;
+}
+.btn-2:hover {
+  background-color: #bfd9ed;
+}
+
+/* ############## overlap design ############# */
+
+.design {
+  border: 4px solid #2dd35c;
+  /* border-left: none; */
+  height: 200px;
+  margin-top: 140px;
+  margin-left: 430px;
+  position: absolute;
+  width: 600px;
+  opacity: 0.75;
+  /* margin-left: 6px; */
+  border-top-left-radius: 20rem;
+  border-bottom-left-radius: 2rem;
+  /* backdrop-filter: blur(15px); */
+  background-color: rgb(204, 197, 241);
+  /* filter: blur(4px); */
+  backdrop-filter:contrast(100%);
+}
+

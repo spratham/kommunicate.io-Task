@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete The Function</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <p><u><h3>Question:</h3></u> Complete the following  javascript function that accepts the url and the parameter name and returns the value of that parameter.
+      <br><br>
+      function getUrlParameterValue(url, parameter) {<br><br>
+//Todo: complete this code
+<br>
+}
+</p><br>
+<p><h3><b><u>Answer:</u> </b></h3> function getUrlParameterValue(url, parameter) {<br>
+  if (!url) url = location.href;<br>
+  parameter = parameter.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");<br>
+  var regexS = "[\\?&]" + parameter + "=([^&#]*)";<br>
+  var regex = new RegExp(regexS);<br>
+  var results = regex.exec(url);<br>
+  return results == null ? null : results[1];<br>
+}<br>
+console.log(<br>
+  getUrlParameterValue(<br>
+    "https://www.kommunicate.io/poweredby?utm_source=https://www.kommunicate.io/&utm_medium=webplugin&utm_campaign=poweredby",<br>
+    "utm_medium"<br>
+  )<br>
+);<br>
+console.log(<br>
+  getUrlParameterValue(<br>
+    "https://www.kommunicate.io/poweredby?utm_source=https://www.kommunicate.io/&utm_medium=webplugin&utm_campaign=poweredby",<br>
+    "utm_campaign"<br>
+  )<br>
+);</p>
+<h1>Please Inspect and check the result in console</h1>
+  </body>
+</html>
