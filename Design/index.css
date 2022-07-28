@@ -73,19 +73,14 @@
 
 .design {
   border: 4px solid #2dd35c;
-  /* border-left: none; */
   height: 200px;
   margin-top: 140px;
   margin-left: 430px;
   position: absolute;
   width: 600px;
   opacity: 0.75;
-  /* margin-left: 6px; */
   border-top-left-radius: 20rem;
   border-bottom-left-radius: 2rem;
-  /* backdrop-filter: blur(15px); */
+  backdrop-filter: blur(15px);
   background-color: rgb(204, 197, 241);
-  /* filter: blur(4px); */
-  backdrop-filter:contrast(100%);
 }
-
